@@ -1,23 +1,48 @@
 :root {
   --nav-color: #1b1b1b;
-  --nav-color-hover: #6e6e6e;
+  --nav-color-hover: #bd84e8;
   --nav-color-activ: #000000;
-  --border: #e3e3e3;
+  --nav-border-hover: #bd84e8;
+  --text-color: #000000;
+  --icon-border-color-hover: #bd84e8;
+  --fill-color-hover: #bd84e8;
+  --icon-border-color: #1b1b1b;
+  --fill-color: #1b1b1b;
 }
 
 .nav-items-style {
   background: inherit !important;
+  border: 1px solid #fff;
 }
 
 .nav-items-style:hover {
+  color: var(--nav-color-hover) !important;
   background: inherit !important;
-  border: var(--border) 1px solid;
+  border: var(--nav-border-hover) 1px solid;
 }
 
 .nav-items-style a {
   color: var(--nav-color) !important;
   transition: all 0.15s ease-in-out;
 }
-.nav-items-style a:hover {
-  color: var(--nav-color-hover) !important;
+
+.title-text {
+  background: linear-gradient(90deg, #bd84e8, #3063c3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-color {
+  color: var(--text-color);
+}
+
+.icon-btn {
+  border: 1px solid var(--icon-border-color);
+  fill: var(--fill-color);
+  transition: all 0.45s ease-in-out;
+}
+
+.icon-btn:hover {
+  border: 1px solid var(--icon-border-color-hover);
+  fill: var(--fill-color-hover);
 }
