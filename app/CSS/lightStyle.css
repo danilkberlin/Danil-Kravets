@@ -1,0 +1,23 @@
+:root {
+  --nav-color: #1b1b1b;
+  --nav-color-hover: #6e6e6e;
+  --nav-color-activ: #000000;
+  --border: #e3e3e3;
+}
+
+.nav-items-style {
+  background: inherit !important;
+}
+
+.nav-items-style:hover {
+  background: inherit !important;
+  border: var(--border) 1px solid;
+}
+
+.nav-items-style a {
+  color: var(--nav-color) !important;
+  transition: all 0.15s ease-in-out;
+}
+.nav-items-style a:hover {
+  color: var(--nav-color-hover) !important;
+}
