@@ -1,13 +1,22 @@
 :root {
+  /* Navbar */
   --nav-color: #1b1b1b;
-  --nav-color-hover: #bd84e8;
+  --nav-color-hover: #c0c0c0;
   --nav-color-activ: #000000;
-  --nav-border-hover: #bd84e8;
+  --nav-border-hover: #c0c0c0;
+  /* Text */
   --text-color: #000000;
+  --grei-color: #c0c0c0;
+  /* Icons */
   --icon-border-color-hover: #bd84e8;
   --fill-color-hover: #bd84e8;
   --icon-border-color: #1b1b1b;
   --fill-color: #1b1b1b;
+  /* Button */
+  --button-border-color: #c0c0c0;
+  --button-border-color-hover: #1b1b1b;
+  --button-background-hover: #1b1b1b;
+  --button-text-color-hover: #fff;
 }
 
 .nav-items-style {
@@ -45,4 +54,27 @@
 .icon-btn:hover {
   border: 1px solid var(--icon-border-color-hover);
   fill: var(--fill-color-hover);
+}
+
+.btn-style {
+  background: inherit;
+  color: var(--text-color);
+  border: 1px solid var(--button-border-color);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: all 0.5s linear;
+}
+
+.btn-style:hover {
+  background: var(--button-background-hover);
+  color: var(--button-text-color-hover);
+  border: 1px solid var(--button-border-color-hover);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.nav-button-content {
+  background-color: initial;
+  font-size: 12px;
+  border: 1px solid #c0c0c0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: var(--color) !important;
 }
