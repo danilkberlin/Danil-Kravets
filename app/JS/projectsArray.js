@@ -19,3 +19,13 @@ const portfolios = [
     src: "/assets/img/project4.jpeg",
   },
 ];
+
+const portfoliosCards = document.querySelector("card-portfolio");
+
+portfolios.forEach((portfolio) => {
+  const card = document.createElement("div");
+  card.classList.add("card");
+  card.innerHTML = `<img src="${portfolio.src}" alt="" />`;
+});
+
+console.log(portfoliosCards);
