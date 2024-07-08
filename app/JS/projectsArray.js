@@ -17,8 +17,6 @@ const imgArray = [
   },
 ];
 
-console.table(imgArray);
-
 for (var i = 0; i < imgArray.length; i++) {
   //Div class Col-5
   const col = document.createElement("div");
@@ -39,7 +37,6 @@ for (var i = 0; i < imgArray.length; i++) {
   img.classList.add("img-fluid");
   img.classList.add("rounded-2");
   img.classList.add("projects-img-w");
-  console.log(img);
 
   //all column + card + img
   col.appendChild(card);
