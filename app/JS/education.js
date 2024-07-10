@@ -45,5 +45,63 @@ const WorkExperience = [
   },
 ];
 
-console.table(educations);
-console.table(WorkExperience);
+for (let i = 0; i < educations.length; i++) {
+  //Creatre a new div for each items
+  const newRow = document.createElement("div");
+  newRow.classList.add(
+    "row",
+    "border-top",
+    "border-bottom",
+    "align-items-center",
+    "py-4"
+  );
+
+  //Create a new column 2
+  const newCol2 = document.createElement("div");
+  newCol2.classList.add("col-2");
+
+  //Create a new column 5
+  const newCol5ForLocation = document.createElement("div");
+  newCol5ForLocation.classList.add("col-5");
+
+  //Create a new column 5
+  const newCol5ForEducation = document.createElement("div");
+  newCol5ForEducation.classList.add("col-5");
+
+  //Create a p tag for year
+  const newYear = document.createElement("p");
+  newYear.classList.add("mb-0");
+  newYear.textContent = educations[i].year;
+
+  //Create a h3 tag for location
+  const newLocation = document.createElement("h3");
+  newLocation.classList.add("mb-0");
+  newLocation.textContent = educations[i].location;
+
+  //Create a p tag for profession
+  const newProfession = document.createElement("p");
+  newProfession.classList.add("mb-0");
+  newProfession.textContent = educations[i].profession;
+
+  //Create a p tag for education
+  const newEducation = document.createElement("p");
+  newEducation.classList.add("mb-0");
+  newEducation.textContent = educations[i].education;
+
+  //Create a col2 > p tag for year
+  newCol2.appendChild(newYear);
+  //Create a col5ForLocation > h3 tag for location and p tag for profession
+  newCol5ForLocation.appendChild(newLocation);
+  newCol5ForLocation.appendChild(newProfession);
+  //Create a col5ForEducation > p tag for education
+  newCol5ForEducation.appendChild(newEducation);
+
+  //Append the new columns to the new row
+  newRow.appendChild(newCol2);
+  newRow.appendChild(newCol5ForLocation);
+  newRow.appendChild(newCol5ForEducation);
+
+  //Append the new row to the main section
+  const addEducation = document.querySelector(".addEducation");
+  addEducation.appendChild(newRow);
+}
