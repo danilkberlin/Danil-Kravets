@@ -1,50 +1,85 @@
 const tools = [
   {
-    icon: "fab fa-html5",
+    icon: "/assets/img/htmlIcon.svg",
     title: "HTML",
   },
   {
-    icon: "fab fa-css3-alt",
+    icon: "/assets/img/cssIcon.svg",
     title: "CSS",
   },
   {
-    icon: "fab fa-js-square",
+    icon: "/assets/img/JSIcon.svg",
     title: "JavaScript",
   },
   {
-    icon: "fab fa-react",
+    icon: "/assets/img/reactIcon.svg",
     title: "React",
   },
   {
-    icon: "fab fa-node-js",
+    icon: "/assets/img/nodeIcon.svg",
     title: "Node.js",
   },
   {
-    icon: "fab fa-bootstrap",
+    icon: "/assets/img/bootstrapIcon.svg",
     title: "Bootstrap",
   },
   {
-    icon: "fab fa-tailwindcss",
+    icon: "/assets/img/tailwindcssIcon.svg",
     title: "Tailwindcss",
   },
   {
-    icon: "fab fa-sass",
+    icon: "/assets/img/sassIcon.svg",
     title: "Sass",
   },
   {
-    icon: "fab fa-adobe",
+    icon: "/assets/img/illustratorIcon.svg",
     title: "Illustrator",
   },
   {
-    icon: "fab fa-figma",
+    icon: "/assets/img/figmaIcon.svg",
     title: "Figma",
   },
   {
-    icon: "fab fa-photo-album",
+    icon: "/assets/img/photoshopIcon.svg",
     title: "Photoshop",
   },
   {
-    icon: "fab fa-vscode",
+    icon: "/assets/img/VSCIcon.svg",
     title: "VSCode",
   },
 ];
+
+console.table(tools);
+
+for (var i = 0; i < tools.length; i++) {
+  // Create a new column
+  const newCol = document.createElement("div");
+  newCol.classList.add("mb-2", "col-md-2", "col-4");
+
+  // Create a new card
+  const card = document.createElement("div");
+  card.classList.add("nav-button-content", "rounded-4", "text-center");
+
+  //Create a new img tag for icon
+  const img = document.createElement("img");
+  img.src = tools[i].icon;
+  img.classList.add("img-fluid", "w-50", "h-50", "my-2");
+
+  // Create a new h6 tag for title
+  const title = document.createElement("h6");
+  title.classList.add("text-color", "mb-3");
+  title.textContent = tools[i].title;
+
+  // Append the new elements to the card
+  card.appendChild(img);
+  card.appendChild(title);
+
+  // Append the new card to the new column
+  newCol.appendChild(card);
+
+  // Append the new column to the new row
+
+  // Append the new row to the main section
+  const MyFavoriteTools = document.querySelector(".MyFavoriteTools>.row");
+  MyFavoriteTools.appendChild(newCol);
+}
