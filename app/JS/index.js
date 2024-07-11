@@ -48,7 +48,7 @@ for (let i = 0; i < MyData.length; i++) {
 
   // Create a new title
   const newTitle = document.createElement("p");
-  newTitle.classList.add("mb-0");
+  newTitle.classList.add("mb-0", "text-grei");
   newTitle.textContent = MyData[i].title;
 
   // Create a new value

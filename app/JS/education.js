@@ -2,28 +2,32 @@ const educations = [
   {
     year: "2010-2015",
     location: "Drawing Concentration",
-    profession: "Course by Ukrainian Academy of Arts",
+    profession: "Course by ",
+    span: "Ukrainian Academy of Arts",
     education:
       "Intensive drawing courses that present the fundamental and academic principles of drawing",
   },
   {
     year: "2018-2019",
     location: "Marketing",
-    profession: "Course by Charkow Academy of Marketing",
+    profession: "Course by ",
+    span: " Charkow Academy of Marketing",
     education:
       "Intensive marketing courses presenting the fundamental principles of promoting and delivering a product as well as sales",
   },
   {
     year: "2019-2020",
     location: "Ul/Ux Desing Specialization",
-    profession: "Onlicne course by XDI",
+    profession: "Onlicne course by ",
+    span: " XDI",
     education:
       "This course is about how to complete the design process from beginning to end",
   },
   {
     year: "2023-2024",
     location: "Frontend development Specialization",
-    profession: "By Little training",
+    profession: "By ",
+    span: " Little training",
     education:
       "I teach frontend development and have experience working with clients and code",
   },
@@ -33,20 +37,23 @@ const WorkExperience = [
   {
     year: "2019-2022",
     location: "System administrator",
-    profession: "Work by Meest",
+    profession: "Work by ",
+    span: " Meest",
     education:
       "Worked as a data processor, transitioned to the development department, and assumed the role of a system administrator within a year",
   },
   {
     year: "2023",
     location: "Frontend Developer",
-    profession: "Practice at Turbine Kreuzberg GmbH",
+    profession: "Practice at",
+    span: " Turbine Kreuzberg GmbH",
     education: "Gained experience in front-end development during internship",
   },
   {
     year: "2024",
     location: "Backend Developer",
-    profession: "Practice at Turbine Kreuzberg GmbH",
+    profession: "Practice at",
+    span: " Turbine Kreuzberg GmbH",
     education: "Gained experience in back-end development during internship",
   },
 ];
@@ -78,27 +85,33 @@ for (let i = 0; i < educations.length; i++) {
 
   //Create a p tag for year
   const newYear = document.createElement("p");
-  newYear.classList.add("mb-0");
+  newYear.classList.add("mb-0", "text-grei");
   newYear.textContent = educations[i].year;
 
   //Create a h3 tag for location
   const newLocation = document.createElement("h3");
-  newLocation.classList.add("mb-0");
+  newLocation.classList.add("mb-0", "text-color");
   newLocation.textContent = educations[i].location;
+
+  //Create a span tag for span
+  const newSpan = document.createElement("span");
+  newSpan.classList.add("text-color");
+  newSpan.textContent = educations[i].span;
 
   //Create a p tag for profession
   const newProfession = document.createElement("p");
-  newProfession.classList.add("mb-0");
+  newProfession.classList.add("mb-0", "text-grei");
   newProfession.textContent = educations[i].profession;
 
   //Create a p tag for education
   const newEducation = document.createElement("p");
-  newEducation.classList.add("mb-0");
+  newEducation.classList.add("mb-0", "text-grei");
   newEducation.textContent = educations[i].education;
 
   //Create a col2 > p tag for year
   newCol2.appendChild(newYear);
   //Create a col5ForLocation > h3 tag for location and p tag for profession
+  newProfession.appendChild(newSpan);
   newCol5ForLocation.appendChild(newLocation);
   newCol5ForLocation.appendChild(newProfession);
   //Create a col5ForEducation > p tag for education
@@ -139,29 +152,36 @@ for (let i = 0; i < WorkExperience.length; i++) {
 
   //Create a p tag for year
   const newYearForWork = document.createElement("p");
-  newYearForWork.classList.add("mb-0");
+  newYearForWork.classList.add("mb-0", "text-grei");
   newYearForWork.textContent = WorkExperience[i].year;
 
   //Create a h3 tag for location
   const newLocationForWork = document.createElement("h3");
-  newLocationForWork.classList.add("mb-0");
+  newLocationForWork.classList.add("mb-0", "text-color");
   newLocationForWork.textContent = WorkExperience[i].location;
 
   //Create a p tag for profession
   const newProfessionForWork = document.createElement("p");
-  newProfessionForWork.classList.add("mb-0");
+  newProfessionForWork.classList.add("mb-0", "text-grei");
   newProfessionForWork.textContent = WorkExperience[i].profession;
+
+  //Create a span tag for span
+  const newSpanForWork = document.createElement("span");
+  newSpanForWork.classList.add("text-color");
+  newSpanForWork.textContent = WorkExperience[i].span;
 
   //Create a p tag for education
   const newEducationForWork = document.createElement("p");
-  newEducationForWork.classList.add("mb-0");
+  newEducationForWork.classList.add("mb-0", "text-grei");
   newEducationForWork.textContent = WorkExperience[i].education;
 
   //Create a col2 > p tag for year
   newCol2ForWork.appendChild(newYearForWork);
   //Create a col5ForLocation > h3 tag for location and p tag for profession
+
   newCol5ForLocationForWork.appendChild(newLocationForWork);
   newCol5ForLocationForWork.appendChild(newProfessionForWork);
+  newProfessionForWork.appendChild(newSpanForWork);
   //Create a col5ForEducation > p tag for education
   newCol5ForEducationForWork.appendChild(newEducationForWork);
 

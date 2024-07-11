@@ -6,7 +6,7 @@
   --nav-border-hover: #c0c0c0;
   /* Text */
   --text-color: #000000;
-  --grei-color: #c0c0c0;
+  --grei-color: #6a6a6a;
   /* Icons */
   --icon-border-color-hover: #bd84e8;
   --fill-color-hover: #bd84e8;
@@ -17,6 +17,12 @@
   --button-border-color-hover: #1b1b1b;
   --button-background-hover: #1b1b1b;
   --button-text-color-hover: #fff;
+  --button-text-color: #1b1b1b;
+  /* Pkaceholder */
+  --placeholder-text: #fff;
+
+  /*background body*/
+  --body--color: #fff;
 }
 
 .nav-items-style {
@@ -43,6 +49,10 @@
 
 .text-color {
   color: var(--text-color);
+}
+
+.text-grei {
+  color: var(--grei-color);
 }
 
 .icon-btn {
@@ -76,9 +86,41 @@
   font-size: 12px;
   border: 1px solid #c0c0c0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  color: var(--color) !important;
+  color: var(--text-color) !important;
+}
+
+.btn-style-white-black {
+  background: inherit;
+  color: var(--button-text-color);
+  border: 1px solid var(--button-border-color-hover);
+  transition: all 0.5s linear;
+}
+
+.btn-style-white-black:hover {
+  background: var(--button-background-hover);
+  color: var(--button-text-color-hover);
+  border: 1px solid var(--button-border-color-hover);
 }
 
 .projects-img-w {
   height: 225px;
+}
+
+.card-about {
+  background-color: inherit;
+  border: 1px solid #c0c0c0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: var(--text-color);
+}
+
+.inherit-content {
+  background-color: inherit !important;
+  border: 1px solid #c0c0c0;
+  color: var(--text-color);
+}
+
+.inherit-content:active {
+  background-color: inherit !important;
+  border: 1px solid #c0c0c0;
+  color: var(--text-color);
 }
