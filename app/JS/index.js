@@ -30,8 +30,10 @@ for (var i = 0; i < imgArray.length; i++) {
 
 // ========= Projects section =========
 
+const StartMyProgrammingEducation = 2022;
+
 const NewDate = new Date();
-const YearsOfExperience = NewDate.getFullYear() - 2022;
+const YearsOfExperience = NewDate.getFullYear() - StartMyProgrammingEducation;
 
 const getByYearsOfExperience = document.querySelector(".YearsOfExperience");
 
@@ -68,3 +70,14 @@ for (let i = 0; i < MyData.length; i++) {
   const mainSection = document.querySelector(".aboutGetDate");
   mainSection.appendChild(newRow);
 }
+
+const ChangeThemeButton = document.querySelector("#theme-toggle-button");
+
+ChangeThemeButton.addEventListener("change", function () {
+  const linkCss = document.querySelector("#linksStyle");
+  if (linkCss.getAttribute("href") === "../CSS/lightStyle.css") {
+    linkCss.href = "../CSS/darkStyle.css";
+  } else {
+    linkCss.href = "../CSS/lightStyle.css";
+  }
+});

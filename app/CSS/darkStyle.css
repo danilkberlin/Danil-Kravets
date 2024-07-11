@@ -1,0 +1,206 @@
+:root {
+  /* Navbar */
+  --nav-color: #fff;
+  --nav-color-hover: #c0c0c0;
+  --nav-color-activ: #3063c3;
+  --nav-border-hover: #c0c0c0;
+  /* Text */
+  --text-color: #fff;
+  --grei-color: #6a6a6a;
+  /* Icons */
+  --icon-border-color-hover: #bd84e8;
+  --fill-color-hover: #bd84e8;
+  --icon-border-color: #1b1b1b;
+  --fill-color: #1b1b1b;
+  /* Button */
+  --button-border-color: #c0c0c0;
+  --button-border-color-hover: #fff;
+  --button-background-hover: #fff;
+  --button-text-color-hover: #1b1b1b;
+  --button-text-color: #fff;
+  /* Pkaceholder */
+  --placeholder-text: #6a6a6a;
+
+  /*background body*/
+  --body--color: #1b1b1b;
+}
+
+body {
+  background-color: var(--body--color);
+}
+
+.nav-items-style {
+  background: inherit !important;
+  border: 1px solid #1b1b1b;
+}
+
+.nav-items-style:hover {
+  color: var(--nav-color-hover) !important;
+  background: inherit !important;
+  border: var(--nav-border-hover) 1px solid;
+}
+
+.nav-items-style a {
+  color: var(--nav-color) !important;
+  transition: all 0.15s ease-in-out;
+}
+
+.title-text {
+  background: linear-gradient(90deg, #bd84e8, #3063c3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-color {
+  color: var(--text-color);
+}
+
+.text-grei {
+  color: var(--grei-color);
+}
+
+.icon-btn {
+  border: 1px solid var(--icon-border-color);
+  fill: var(--fill-color);
+  transition: all 0.45s ease-in-out;
+}
+
+.icon-btn:hover {
+  border: 1px solid var(--icon-border-color-hover);
+  fill: var(--fill-color-hover);
+}
+
+.btn-style {
+  background: inherit;
+  color: var(--text-color);
+  border: 1px solid var(--button-border-color);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: all 0.5s linear;
+}
+
+.btn-style:hover {
+  background: var(--button-background-hover);
+  color: var(--button-text-color-hover);
+  border: 1px solid var(--button-border-color-hover);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.nav-button-content {
+  background-color: initial;
+  font-size: 12px;
+  border: 1px solid #c0c0c0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: var(--text-color) !important;
+}
+
+.btn-style-white-black {
+  background: inherit;
+  color: var(--button-text-color);
+  border: 1px solid var(--button-border-color-hover);
+  transition: all 0.5s linear;
+}
+
+.btn-style-white-black:hover {
+  background: var(--button-background-hover);
+  color: var(--button-text-color-hover);
+  border: 1px solid var(--button-border-color-hover);
+}
+
+.projects-img-w {
+  height: 225px;
+}
+
+.card-about {
+  background-color: inherit;
+  border: 1px solid #c0c0c0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: var(--text-color);
+}
+
+.inherit-content {
+  background-color: inherit !important;
+  border: 1px solid #c0c0c0;
+  color: var(--text-color) !important;
+}
+
+.inherit-content:active {
+  background-color: inherit !important;
+  border: 1px solid #c0c0c0;
+  color: var(--text-color) !important;
+}
+
+.inherit-content::placeholder {
+  color: var(--placeholder-text);
+}
+
+/* The switch - the box around the slider */
+#theme-toggle-button {
+  font-size: 12px;
+  position: relative;
+  display: inline-block;
+  width: 5em;
+  cursor: pointer;
+}
+
+/* Hide default HTML checkbox */
+#toggle {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#container,
+#patches,
+#stars,
+#button,
+#sun,
+#moon,
+#cloud {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.25s;
+}
+
+/* night sky background */
+#toggle:checked + svg #container {
+  fill: #2b4360;
+}
+
+/* move button to right when checked */
+#toggle:checked + svg #button {
+  transform: translate(28px, 2.333px);
+}
+
+/* show/hide sun and moon based on checkbox state */
+#sun {
+  opacity: 1;
+}
+
+#toggle:checked + svg #sun {
+  opacity: 0;
+}
+
+#moon {
+  opacity: 0;
+}
+
+#toggle:checked + svg #moon {
+  opacity: 1;
+}
+
+/* show or hide background items on checkbox state */
+#cloud {
+  opacity: 1;
+}
+
+#toggle:checked + svg #cloud {
+  opacity: 0;
+}
+
+#stars {
+  opacity: 0;
+}
+
+#toggle:checked + svg #stars {
+  opacity: 1;
+}
