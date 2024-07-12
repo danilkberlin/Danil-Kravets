@@ -81,3 +81,20 @@ ChangeThemeButton.addEventListener("change", function () {
     linkCss.href = "../CSS/lightStyle.css";
   }
 });
+
+// ========= Fixed Info Card =========
+const navbarExample = document.getElementById("navbar-example2");
+const viewportWidth = window.innerWidth;
+
+// ========= Fixed Info Card =========
+
+function updateCardFixed() {
+  if (viewportWidth >= 992) {
+    navbarExample.classList.add("position-fixed", "w-25", "fixed-card");
+  } else {
+    navbarExample.classList.remove("position-fixed", "top-0");
+  }
+}
+
+updateCardFixed();
+window.addEventListener("resize", updateCardFixed);
