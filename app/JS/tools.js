@@ -4,7 +4,7 @@ const tools = [
     title: "HTML",
   },
   {
-    icon: "./assets/img/cssIcon.svg",
+    icon: "assets/img/cssIcon.svg",
     title: "CSS",
   },
   {
