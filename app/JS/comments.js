@@ -1,7 +1,7 @@
 const comments = [
   {
     id: 1,
-    img: "/assets/img/ComentsFoto2.jpeg",
+    img: "assets/img/ComentsFoto2.jpeg",
     name: "Benjamin Smith",
     text: "SEO in Creativen People",
     comment:
@@ -10,7 +10,7 @@ const comments = [
   },
   {
     id: 2,
-    img: "/assets/img/ComentsFoto1.jpeg",
+    img: "assets/img/ComentsFoto1.jpeg",
     name: "Alice Johnson",
     text: "Creative Design",
     comment:
@@ -19,7 +19,7 @@ const comments = [
   },
   {
     id: 3,
-    img: "/assets/img/ComentsFoto3.jpeg",
+    img: "assets/img/ComentsFoto3.jpeg",
     name: "Jenny Pineapple",
     text: "Marketing",
     comment:
@@ -28,7 +28,7 @@ const comments = [
   },
   {
     id: 4,
-    img: "/assets/img/ComentsFoto4.jpeg",
+    img: "assets/img/ComentsFoto4.jpeg",
     name: "Sarah Orange",
     text: "UI/UX Design",
     comment:
@@ -37,7 +37,7 @@ const comments = [
   },
   {
     id: 5,
-    img: "/assets/img/ComentsFoto5.jpeg",
+    img: "assets/img/ComentsFoto5.jpeg",
     name: "Emily Blue",
     text: "Brand Identity",
     comment:
@@ -46,7 +46,7 @@ const comments = [
   },
   {
     id: 6,
-    img: "/assets/img/ComentsFoto6.jpeg",
+    img: "assets/img/ComentsFoto6.jpeg",
     name: "Olivia Green",
     text: "Social Media",
     comment:
@@ -55,7 +55,7 @@ const comments = [
   },
   {
     id: 7,
-    img: "/assets/img/ComentsFoto7.jpeg",
+    img: "assets/img/ComentsFoto7.jpeg",
     name: "Isabella Pink",
     text: "Content Marketing",
     comment:
@@ -64,7 +64,7 @@ const comments = [
   },
   {
     id: 8,
-    img: "/assets/img/ComentsFoto8.jpeg",
+    img: "assets/img/ComentsFoto8.jpeg",
     name: "Mia Yellow",
     text: "E-Commerce",
     comment:
@@ -73,7 +73,7 @@ const comments = [
   },
   {
     id: 9,
-    img: "/assets/img/ComentsFoto9.jpeg",
+    img: "assets/img/ComentsFoto9.jpeg",
     name: "Ava Purple",
     text: "Advertising",
     comment:
