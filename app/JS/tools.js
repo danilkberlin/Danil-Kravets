@@ -1,50 +1,50 @@
 const tools = [
   {
-    icon: "assets/img/htmlIcon.svg",
+    icon: "./assets/img/htmlIcon.svg",
     title: "HTML",
   },
   {
-    icon: "assets/img/cssIcon.svg",
+    icon: "./assets/img/cssIcon.svg",
     title: "CSS",
   },
   {
-    icon: "assets/img/JSIcon.svg",
+    icon: "./assets/img/JSIcon.svg",
     title: "JavaScript",
   },
   {
-    icon: "assets/img/reactIcon.svg",
+    icon: "./assets/img/reactIcon.svg",
     title: "React",
   },
   {
-    icon: "assets/img/nodeIcon.svg",
+    icon: "./assets/img/nodeIcon.svg",
     title: "Node.js",
   },
   {
-    icon: "assets/img/bootstrapIcon.svg",
+    icon: "./assets/img/bootstrapIcon.svg",
     title: "Bootstrap",
   },
   {
-    icon: "assets/img/tailwindcssIcon.svg",
+    icon: "./assets/img/tailwindcssIcon.svg",
     title: "Tailwindcss",
   },
   {
-    icon: "assets/img/sassIcon.svg",
+    icon: "./assets/img/sassIcon.svg",
     title: "Sass",
   },
   {
-    icon: "assets/img/illustratorIcon.svg",
+    icon: "./assets/img/illustratorIcon.svg",
     title: "Illustrator",
   },
   {
-    icon: "assets/img/figmaIcon.svg",
+    icon: "./assets/img/figmaIcon.svg",
     title: "Figma",
   },
   {
-    icon: "assets/img/photoshopIcon.svg",
+    icon: "./assets/img/photoshopIcon.svg",
     title: "Photoshop",
   },
   {
-    icon: "assets/img/VSCIcon.svg",
+    icon: "./assets/img/VSCIcon.svg",
     title: "VSCode",
   },
 ];
