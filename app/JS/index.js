@@ -266,7 +266,9 @@ for (let i = 0; i < WorkExperience.length; i++) {
   addWorkExperience.appendChild(newRowForWork);
 }
 
-for (var i = 0; i < tools.length; i++) {
+const MyFavoriteTools = document.querySelector(".MyFavoriteTools > .row");
+
+for (let i = 0; i < tools.length; i++) {
   // Create a new column
   const newCol = document.createElement("div");
   newCol.classList.add("mb-2", "col-md-2", "col-4");
@@ -275,26 +277,28 @@ for (var i = 0; i < tools.length; i++) {
   const card = document.createElement("div");
   card.classList.add("nav-button-content", "rounded-4", "text-center");
 
-  //Create a new img tag for icon
-  const img = document.createElement("img");
-  img.src = tools[i].icon;
-  img.classList.add("img-fluid", "w-50", "h-50", "my-2");
+  // Check if the tool has an icon or an SVG
+  if (tools[i].icon) {
+    const img = document.createElement("img");
+    img.src = tools[i].icon;
+    img.classList.add("img-fluid", "w-50", "h-50", "my-2");
+    card.appendChild(img); // Append the image to the card
+  } else if (tools[i].svg) {
+    const svg = document.createElement("svg");
+    svg.innerHTML = tools[i].svg;
+    svg.classList.add("text-center", "w-50", "h-50", "my-2");
+    card.appendChild(svg); // Append the SVG to the card
+  }
 
   // Create a new h6 tag for title
   const title = document.createElement("h6");
   title.classList.add("text-color", "mb-3");
   title.textContent = tools[i].title;
+  card.appendChild(title); // Append the title to the card
 
-  // Append the new elements to the card
-  card.appendChild(img);
-  card.appendChild(title);
-
-  // Append the new card to the new column
+  // Append the card to the column
   newCol.appendChild(card);
 
-  // Append the new column to the new row
-
-  // Append the new row to the main section
-  const MyFavoriteTools = document.querySelector(".MyFavoriteTools>.row");
+  // Append the column to the row
   MyFavoriteTools.appendChild(newCol);
 }
