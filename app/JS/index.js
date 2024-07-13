@@ -75,10 +75,10 @@ const ChangeThemeButton = document.querySelector("#theme-toggle-button");
 
 ChangeThemeButton.addEventListener("change", function () {
   const linkCss = document.querySelector("#linksStyle");
-  if (linkCss.getAttribute("href") === "../CSS/lightStyle.css") {
-    linkCss.href = "../CSS/darkStyle.css";
+  if (linkCss.getAttribute("href") === "./app/CSS/lightStyle.css") {
+    linkCss.href = "./app/CSS/darkStyle.css";
   } else {
-    linkCss.href = "../CSS/lightStyle.css";
+    linkCss.href = "./app/CSS/lightStyle.css";
   }
 });
 
